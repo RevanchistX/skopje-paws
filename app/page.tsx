@@ -1,15 +1,21 @@
 import Hero from "../components/Hero";
-import GalleryPage from "../components/Gallery";
+import Steps from "@/Steps/Steps";
+import Services from "@/Services";
 import Form from "@/Form";
+import Blogs from "@/BlogCard/blog";
+import Carousel from "@/Carousel/Carousel";
 
 
 export default function Home() {
+
     return (
         <div>
-            <Hero/>
-            <GalleryPage folderName={`Showcase`}/>
-            <GalleryPage folderName={`Services`}/>
-            <Form/>
+            <Hero />
+            <Steps />
+            <Carousel />
+            <Services />
+            <Form />
+            <Blogs />
         </div>
     )
 }
